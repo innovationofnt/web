@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "collectTime": "2018年8月14日13：32",
+      "deviceName": "供电总表1",
+      "powerConsumption": "45kw/h"
+    },   
+     {
+      "collectTime": "2018年8月14日13：34",
+      "deviceName": "供电总表1",
+      "powerConsumption": "46kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日13：35",
+      "deviceName": "供电总表1",
+      "powerConsumption": "46kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日13：40",
+      "deviceName": "供电总表1",
+      "powerConsumption": "47.9kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日13：54",
+      "deviceName": "供电总表1",
+      "powerConsumption": "59.8kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日13：55",
+      "deviceName": "供电总表1",
+      "powerConsumption": "60kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日13：55",
+      "deviceName": "供电总表1",
+      "powerConsumption": "55kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日14：00",
+      "deviceName": "供电总表1",
+      "powerConsumption": "56.2kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日14：02",
+      "deviceName": "供电总表1",
+      "powerConsumption": "56.6kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日14：03",
+      "deviceName": "供电总表1",
+      "powerConsumption": "57.9kw/h"
+    },   
+    {
+      "collectTime": "2018年8月14日14：06",
+      "deviceName": "供电总表1",
+      "powerConsumption": "52kw/h"
+    }                                                                                           
+  ]
+}

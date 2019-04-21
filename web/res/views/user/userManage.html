@@ -1,0 +1,186 @@
+<!-- 搜索 -->
+<div class="search">
+  <div class="layui-input-inline">
+    <input type="text" class="layui-input" id="userSearch" placeholder="请输入用户ID" autocomplete="off" name="id">
+  </div>
+  <button class="layui-btn layui-btn-primary" id="searchBtn" data-type="reload">搜索</button>
+</div>
+
+<!-- 表格 -->
+<table id="userManage-table" lay-filter="userManage-table-filter"></table>
+
+<!-- 工具条按钮 -->
+<script type="text/html" id="barUser">
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<!-- 新增按钮 -->
+<script type="text/html" id="addBtn">
+  <div class="layui-btn-container">
+     <button class="layui-btn layui-btn-sm" lay-event="add"><i class="layui-icon">&#xe608;</i> 新增</button>
+  </div>
+</script>
+
+<!-- 新增用户 -->
+<script type="text/html" id="add">
+  <div class="layui-fluid add-layer">
+  <form class="layui-form layui-form-pane" action="">
+    <div class="layui-form-item">
+      <label class="layui-form-label">ID</label>
+      <div class="layui-input-block">
+        <input type="text" name="ID" required lay-verify="required" placeholder="请输入ID" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">账户</label>
+      <div class="layui-input-block">
+        <input type="text" name="account" required lay-verify="required" placeholder="请输入账户" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">用户名</label>
+      <div class="layui-input-block">
+        <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">姓名</label>
+      <div class="layui-input-block">
+        <input type="text" name="name" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">密码</label>
+      <div class="layui-input-block">
+        <input type="password" name="请输入密码" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">联系方式</label>
+      <div class="layui-input-block">
+        <input type="tel" name="phone" required lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">邮箱</label>
+      <div class="layui-input-block">
+        <input type="text" name="mail" required lay-verify="required" placeholder="请输入邮箱" autocomplete="off" class="layui-input"
+          value=""/>
+      </div>
+    </div>
+    <!--             <div class="layui-form-item">
+                <label class="layui-form-label">内容</label>
+                <div class="layui-input-block">
+                    <textarea name="content" required lay-verify="required" placeholder="请输入" class="layui-textarea"></textarea>
+                </div>
+            </div> -->
+    <div class="layui-form-item">
+      <label class="layui-form-label">权限</label>
+      <div class="layui-input-inline">
+        <select name="right" lay-verify="required">
+          <option value="">请选择权限级别</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-input-block">
+        <button class="layui-btn" lay-submit lay-filter="submit-form">立即提交</button>
+        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+      </div>
+    </div>
+  </form>
+</div>
+</script>
+
+
+<!-- 编辑用户 -->
+<script type="text/html" id="edit">
+  <div class="layui-form layui-form-pane">
+  <div class="layui-fluid add-layer">
+    <form class="layui-form" action="">
+      <div class="layui-form-item">
+        <label class="layui-form-label">ID</label>
+        <div class="layui-input-block">
+          <input type="text" name="id" required lay-verify="required" placeholder="请输入ID" autocomplete="off" class="layui-input"
+            value="{{d.id}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">账户</label>
+        <div class="layui-input-block">
+          <input type="text" name="account" required lay-verify="required" placeholder="请输入账户" autocomplete="off" class="layui-input"
+            value="{{d.account}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">用户名</label>
+        <div class="layui-input-block">
+          <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+            class="layui-input" value="{{d.username}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-block">
+          <input type="text" name="name" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input"
+            value="{{d.name}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-block">
+          <input type="text" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
+            class="layui-input" value="{{d.password}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系方式</label>
+        <div class="layui-input-block">
+          <input type="tel" name="phone" required lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input"
+            value="{{d.phone}}"/>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">邮箱</label>
+        <div class="layui-input-block">
+          <input type="text" name="mail" required lay-verify="required" placeholder="请输入邮箱" autocomplete="off" class="layui-input"
+            value="{{d.mail}}"/>
+        </div>
+      </div>
+      <!--             <div class="layui-form-item">
+                <label class="layui-form-label">内容</label>
+                <div class="layui-input-block">
+                    <textarea name="content" required lay-verify="required" placeholder="请输入" class="layui-textarea"></textarea>
+                </div>
+            </div> -->
+      <div class="layui-form-item">
+        <label class="layui-form-label">权限</label>
+        <div class="layui-input-inline">
+          <select name="authority" lay-verify="required">
+            <option value="">请选择</option>
+            <option value="1" {{#if(d.authority==1) { }} selected {{# } }}>1</option>
+            <option value="2" {{#if(d.authority==2) { }} selected {{# } }}>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+          <button class="layui-btn" lay-submit lay-filter="submit-form">立即提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</script>
+
+
+<script src="./res/js/userManage.js"></script>

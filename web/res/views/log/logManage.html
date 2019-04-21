@@ -1,0 +1,76 @@
+<!-- 搜索 -->
+<div class="search">
+  <div class="layui-input-inline">
+    <input type="text" class="layui-input" id="logSearch" placeholder="请输入查询日期" autocomplete="off" name="date">
+  </div>
+  <button class="layui-btn layui-btn-primary" id="searchBtn" data-type="reload">搜索</button>
+</div>
+
+<!-- 表格 -->
+<table id="logManage-table" lay-filter="logManage-table-filter"></table>
+
+<!-- 工具条按钮 -->
+<script type="text/html" id="barLog">
+  <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<!-- 新增按钮 -->
+<script type="text/html" id="addBtn">
+  <div class="layui-btn-container">
+     <button class="layui-btn layui-btn-sm" lay-event="add"><i class="layui-icon">&#xe608;</i>新增</button>
+  </div>
+</script>
+
+<!-- 新增日志 -->
+<script type="text/html" id="add">
+  <div class="layui-fluid add-layer">
+  <form class="layui-form layui-form-pane" action="">
+    <div class="layui-form-item">
+      <label class="layui-form-label">时间</label>
+      <div class="layui-input-block">
+        <input type="text" name="time" required lay-verify="required" placeholder="请选择时间" autocomplete="off" class="layui-input" />
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">日志类型</label>
+      <div class="layui-input-inline">
+        <select name="type" lay-verify="required">
+          <option value="">请选择日志类型</option>
+          <option value="1">运行日志</option>
+          <option value="2">维护日志</option>
+        </select>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">日志摘要</label>
+      <div class="layui-input-block">
+        <input type="text" name="key" required lay-verify="required" placeholder="请输入摘要" autocomplete="off" class="layui-input" />
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">日志内容</label>
+      <div class="layui-input-block">
+        <textarea name="content" required lay-verify="required" placeholder="请输入日志内容" class="layui-textarea"></textarea>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-input-block">
+        <button class="layui-btn" lay-submit lay-filter="submit-form">立即提交</button>
+        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+      </div>
+    </div>
+  </form>
+</div>
+</script>
+
+<!-- 日志详情 -->
+<script type="text/html" id="detail">
+<div class="layui-fluid detailContent">
+  <p>{{d.content}}</p>
+</div>
+</script>
+
+
+
+<script src="./res/js/logManage.js"></script>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>空调节能控制</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="./plugin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="./res/css/css.css" media="all">
+
+</head>
+
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">后台管理系统</div>
+      <!-- horizontal navigation area -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item">
+          <a>空调节能控制与能耗监测系统</a>
+        </li>
+      </ul>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href="javascript:;">
+            <!-- add logo -->
+            <img class="layui-nav-img" src="./res/img/logo.png" />
+          </a>
+          <dl class="layui-nav-child">
+            <dd>
+              <a href="#/index/test">基本资料</a>
+            </dd>
+            <dd>
+              <a href="#/index/test">安全设置</a>
+            </dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="">注销</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;"> 空调节能监控</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="#/monitor/coldSourceMonitor">冷源监测</a>
+              </dd>
+              <dd>
+                <a href="#/monitor/extremeSourceMonitor">末端监测</a>
+              </dd>
+              <!--               <dd>
+                <a href="">运行参数设置 & 手动控制</a>
+              </dd>
+              <dd>
+                <a href="">故障报警信息</a>
+              </dd> -->
+            </dl>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a class="" href="javascript:;">能耗预测统计</a>
+            <dl class="layui-nav-child">
+              <!--               <dd>
+                <a href="#/predict/predict">能耗统计</a>
+              </dd> -->
+              <dd>
+                <a href="#/predict/predict">能耗预测分析</a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">数据查询与报表</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="#/data/consume">电耗查询</a>
+              </dd>
+              <dd>
+                <a href="#/data/tem">温度查询</a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">日志管理</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="#/log/logEdit">日志编辑</a>
+              </dd>
+              <dd>
+                <a href="#/log/logManage">日志查看</a>
+              </dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">用户管理</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="#/user/userManage">用户管理</a>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body mainArea"></div>
+
+    <div class="layui-footer">
+      © powered by jquery-3.3.1, layui-v.2.25 and echarts-v4.0.2
+    </div>
+  </div>
+</body>
+
+
+<!--js-->
+<script src="./plugin/layui/layui.all.js"></script>
+<script src="./plugin/jquery-3.3.1.js"></script>
+<script src="./plugin/echarts.js"></script>
+<script src="./res/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+{
+    "status": "0",
+    "msg": "success!",
+    "data": {
+        "chiller": [{
+                "num": 1,
+                "status": 0,
+                "runstatus": "0",
+                "failIndication": "0",
+                "startFail": "0",
+                "freezeSupplyTemp": "39",
+                "freezeReturnTemp": "25",
+                "tempSet": "27"
+            },
+            {
+                "num": 2,
+                "status": 0,
+                "runstatus": "0",
+                "failIndication": "0",
+                "startFail": "0",
+                "freezeSupplyTemp": "39",
+                "freezeReturnTemp": "25",
+                "tempSet": "27"
+            }
+        ],
+        "freezePump": [{
+                "num": 1,
+                "status": 0,
+                "frequencyRunStatus": "0",
+                "contactorStatus": "100",
+                "inverterStatus": "1",
+                "inverterAlter": "1",
+                "inverterAdjust": "10",
+                "inverterFeedback": "0",
+                "startFail": "0",
+                "pressureDiff": "100",
+                "frequencyAlert": "1"
+            },
+            {
+                "num": 2,
+                "status": 0,
+                "frequencyRunStatus": "0",
+                "contactorStatus": "100",
+                "inverterStatus": "1",
+                "inverterAlter": "1",
+                "inverterAdjust": "10",
+                "inverterFeedback": "0",
+                "startFail": "0",
+                "pressureDiff": "100",
+                "frequencyAlert": "1"
+            }
+        ],
+        "coolPump": [{
+                "num": 1,
+                "status": 0,
+                "frequencyRunStatus": "0",
+                "contactorStatus": "100",
+                "inverterStatus": "1",
+                "inverterAlter": "1",
+                "inverterAdjust": "10",
+                "inverterFeedback": "0",
+                "startFail": "0",
+                "pressureDiff": "100"
+            },
+            {
+                "num": 2,
+                "status": 0,
+                "frequencyRunStatus": "0",
+                "contactorStatus": "100",
+                "inverterStatus": "1",
+                "inverterAlter": "1",
+                "inverterAdjust": "10",
+                "inverterFeedback": "0",
+                "startFail": "0",
+                "pressureDiff": "100"
+            }
+        ],
+        "coolTower": [{
+            "num": 1,
+            "status": 0,
+            "frequencyRunStatus": "0",
+            "contactorStatus": "100",
+            "inverterStatus": "1",
+            "inverterAlter": "1",
+            "inverterAdjust": "10",
+            "inverterFeedback": "0",
+            "startFail": "0"
+        }]
+    }
+}

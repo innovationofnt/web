@@ -1,0 +1,139 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "collectTime": "2018年8月14日13：30",
+      "deviceNumber": "001",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },   
+    {
+      "collectTime": "2018年8月14日13：32",
+      "deviceNumber": "002",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年8月14日13：34",
+      "deviceNumber": "003",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年8月14日13：32",
+      "deviceNumber": "004",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "005",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "006",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "007",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "008",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "009",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },                                                                                 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "010",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },                                                                                 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "011",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },                                                                                 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "012",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },                                                                                 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "013",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },                                                                                 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "014",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }, 
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "015",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "016",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "017",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "018",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "019",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "020",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "021",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    },  
+    {
+      "collectTime": "2018年3月12日16：30",
+      "deviceNumber": "022",
+      "deviceName": "冷冻主机现场",
+      "deviceState": "开启"
+    }                                                                                                                                                                                                                                                                                                                                                                                         
+  ]
+}

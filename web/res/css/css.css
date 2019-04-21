@@ -1,0 +1,138 @@
+.logo-font {
+    max-width: 300px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.input-date {
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+/* common */
+/* .export {
+    width: 136px;
+    margin-right: 50px
+}*/
+
+.mainArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:800px;
+}
+
+/* monitor */
+#systemChart {
+    width: 100%;
+    height: 630px
+}
+
+/* tem */
+
+
+/* consume */
+
+
+/* userManage */
+#userSearch {
+    width: 300px;
+}
+
+/* logManage */
+#logSearch {
+    width: 300px;
+}
+
+.detailContent {
+    margin-top: 20px
+}
+
+/* logEdit */
+.logEdit {
+    top: 100px !important;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px
+}
+
+#editBox {
+    display: none;
+}
+
+#editSave {
+    margin-top: 30px;
+    width: 100px;
+    margin-left: 450px
+}
+
+/* search */
+.search {
+    margin-top: 10px;
+}
+
+.deviceSearch {
+    display: inline;
+}
+
+.deviceSearch:after {
+    content: '\20';
+    clear: both;
+    display: inline;
+}
+
+.timeSearch {
+    display: inline-block;
+    width: 300px;
+}
+
+/* 新增用户 */
+.add-layer {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+/* login */
+.login {
+    width: 365px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    box-shadow: 0 -15px 30px #0d957a;
+    border-radius: 5px;
+    padding: 2%;
+    z-index: 1000;
+}
+
+.login-header {
+    font-weight: bold;
+    color: #009688;
+    margin-bottom: 30px;
+}
+
+.login .layui-form-checkbox {
+    margin-left: 0px;
+}
+
+.login-forget {
+    margin-top: 10px;
+    float: right;
+    color: #009688;
+}
+
+/* predict */
+.predict {
+    margin-top: 50px;
+}
+
+.predict .layui-input-inline {
+    width: 420px
+}
+
+.predictImg {
+    width: 300px;
+    margin-top: 150px;
+}
